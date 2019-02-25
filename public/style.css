@@ -1,0 +1,167 @@
+html {
+  --font: 'Oswald', sans-serif;
+  --main-background-color: #0b0c10;
+  --main-text: #66fcf1;
+  --box-background: #45a29E;
+  --box-text: #1f2833;
+  --book-details-background: #c5c6c7;
+  --library-button-color: #45A29E;
+}
+  
+
+body {  
+  font-family: var(--font);
+  background-color: var(--main-background-color);
+  margin: 0px  
+}
+
+h1 {
+  color: var(--main-text);
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+  font-size: 72px;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 10px 0px 10px 0px;
+  text-align: center;
+}
+
+#main-container {    
+  color: var(--main-text);  
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#entry-display {   
+  background-color: var(--box-background);
+  color: var(--box-text);
+  width: 40%;  
+  padding-bottom: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+input[type="submit"] {
+  margin-left: 5px;
+}
+
+input[type="submit"]:hover, button:hover {
+  color: var(--main-text);
+  background-color: var(--box-text);
+}
+
+input[type="submit"], button {
+  color: var(--box-text);
+  background-color: var(--main-text);
+}
+
+.book-details-style {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px;    
+  border-radius: 5px;
+  background-color: var(--book-details-background);
+  border: 3px solid var(--main-background-color);
+}
+
+#book-title {  
+  font-size: 20px;
+}
+
+#book-id {  
+  font-size: 12px;
+}
+
+ul {
+  text-align: left;
+}
+
+#book-buttons {  
+  font-family: var(--font);  
+}
+
+#delete-button {
+  margin-left: 5px;
+}
+
+#delete-container {
+  text-align: center;
+}
+
+button[name="no"] {
+  margin-left: 5px;  
+}
+
+#delete-check>h4 {
+  background-color: white;
+  color: red;
+}
+
+
+#catalog-display {
+  border-radius: 5px;
+  max-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--box-background);
+  color: var(--box-text);
+  width: 35%;  
+}
+
+#current-titles {  
+  width: 85%;
+  padding: 0px 10px 0px 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;   
+}
+
+input {
+  font-family: var(--font);
+  border-radius: 5px;
+  border: none;
+}
+
+input[type="text"] {
+  font-family: var(--font);
+  padding-left: 10px;
+  width: 200px;  
+}
+
+button:disabled {
+  color: var(--book-details-background);
+  background-color: var(--main-background-color)
+}
+
+button {
+  font-family: var(--font);
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+}
+
+.library-book:hover {  
+  color: var(--book-details-background);
+  background: var(--box-background);  
+}
+
+.library-book {
+  display: block;
+  border-radius: 0px;
+  text-align: left;
+  color: var(--library-book-color);
+  background: var(--box-background);
+  width: auto;
+  font-size: 18px;
+  border: none;
+  text-decoration: none;
+  font-family: var(--font);
+}
