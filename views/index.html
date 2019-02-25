@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FCC Personal Library</title>
+    <meta name="description" content="A tool for catalog your book collection">    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="/public/style.css">    
+  </head>
+  <body>    
+    <h1>The freeCodeCamp Personal Library</h1>
+    <div id="main-container">      
+      <div id="entry-display">        
+          <div id="new-book">
+            <h3>Add a book to your library</h3>                          
+            <form id="new-title-form">
+              <input type="text" name="title" id="new-title-box" placeholder="Book Title">
+              <input type="submit" value="Add Title">
+            </form>
+          </div>
+          <div id="book-details">
+            <div id="book-title"></div>
+            <div id="book-id"></div>            
+            <ul id="book-comments"></ul>
+            <div id="book-buttons"></div>           
+            <form id="new-comment"></form>                       
+          </div>
+          <div id="delete-container">
+            <button type="button" id="delete-library">Delete Entire Library</button>
+            <div id="delete-library-check">
+              <div id="delete-check"></div>
+            </div> 
+          </div>      
+      </div>
+      <div id="catalog-display">
+        <div id="catalog-title"><h3>Your Current Library</h3></div>
+        <div id="current-titles"></div>
+      </div>
+    </div>
+    <script src="./public/client.js"></script>
+  </body>
+  
+</html>
