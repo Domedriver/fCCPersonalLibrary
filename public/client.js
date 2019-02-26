@@ -56,7 +56,7 @@ function handleNewComment(event) {
   })
 }
 
-function commentPressed(event) {
+function commentPressed(event) {  
   var commentBox = document.createElement('input')
   commentBox.type = 'text'
   commentBox.name = 'comment'
@@ -66,6 +66,7 @@ function commentPressed(event) {
   commentSubmit.type = 'submit'
   commentSubmit.value = 'Submit Comment'
   newComment.appendChild(commentBox)
+  newComment.firstChild.focus()
   newComment.appendChild(commentSubmit)
   newComment.setAttribute('data-state', event.target.getAttribute('data-state'))      
   newComment.addEventListener('submit', handleNewComment)
